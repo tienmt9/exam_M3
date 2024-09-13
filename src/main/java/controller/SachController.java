@@ -95,6 +95,6 @@ public class SachController extends HttpServlet {
             sachService.updateSach(sach);
         }
 
-        response.sendRedirect(request.getContextPath() + "/sach?action=list");
+        response.sendRedirect(request.getContextPath() + "/SachController?action=list");
     }
 }
