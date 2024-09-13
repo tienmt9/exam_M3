@@ -1,0 +1,14 @@
+package service;
+
+import model.Sach;
+
+import java.util.List;
+
+public interface SachService {
+    void addSach(Sach sach);
+    void updateSach(Sach sach);
+    void deleteSach(String maSach);
+    Sach getSachById(String maSach);
+    List<Sach> getAllSach();
+}
+
