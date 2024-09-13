@@ -55,7 +55,6 @@ public class HocSinhController extends HttpServlet {
         }
     }
 
-    // Hiển thị danh sách học sinh
     private void listHocSinh(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<HocSinh> hocSinhList = hocSinhService.getAllHocSinh();
         request.setAttribute("hocSinhList", hocSinhList);
@@ -63,13 +62,11 @@ public class HocSinhController extends HttpServlet {
         dispatcher.forward(request, response);
     }
 
-    // Hiển thị form thêm học sinh
     private void showAddForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         RequestDispatcher dispatcher = request.getRequestDispatcher("hoc_sinh_form.jsp");
         dispatcher.forward(request, response);
     }
 
-    // Hiển thị form chỉnh sửa học sinh
     private void showEditForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String maHocSinh = request.getParameter("maHocSinh");
         HocSinh hocSinh = hocSinhService.getHocSinhById(maHocSinh);
@@ -78,7 +75,6 @@ public class HocSinhController extends HttpServlet {
         dispatcher.forward(request, response);
     }
 
-    // Xóa học sinh
     private void deleteHocSinh(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String maHocSinh = request.getParameter("maHocSinh");
         hocSinhService.deleteHocSinh(maHocSinh);
