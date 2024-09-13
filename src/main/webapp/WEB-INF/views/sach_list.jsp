@@ -15,7 +15,7 @@
 <body>
 <div class="container">
     <h1>Danh Sách Sách</h1>
-    <a href="${pageContext.request.contextPath}/sach?action=add" class="btn btn-primary mb-3">Thêm Sách</a>
+    <a href="${pageContext.request.contextPath}/SachController?action=add" class="btn btn-primary mb-3">Thêm Sách</a>
     <table class="table table-bordered">
         <thead>
         <tr>
@@ -36,8 +36,8 @@
                 <td>${sach.moTa}</td>
                 <td>${sach.soLuong}</td>
                 <td>
-                    <a href="${pageContext.request.contextPath}/sach?action=edit&maSach=${sach.maSach}" class="btn btn-warning">Sửa</a>
-                    <a href="${pageContext.request.contextPath}/sach?action=delete&maSach=${sach.maSach}" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa?')">Xóa</a>
+                    <a href="${pageContext.request.contextPath}/SachController?action=edit&maSach=${sach.maSach}" class="btn btn-warning">Sửa</a>
+                    <a href="${pageContext.request.contextPath}/SachController?action=delete&maSach=${sach.maSach}" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa?')">Xóa</a>
                 </td>
             </tr>
         </c:forEach>

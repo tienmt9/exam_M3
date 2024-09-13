@@ -18,7 +18,7 @@
         <c:when test="${sach != null}">Sửa Sách</c:when>
         <c:otherwise>Thêm Sách</c:otherwise>
     </c:choose></h1>
-    <form action="sach" method="post">
+    <form action="SachController" method="post">
         <div class="form-group">
             <label>Mã Sách</label>
             <input type="text" class="form-control" name="maSach" value="${sach.maSach}" readonly="${sach != null}">
@@ -40,7 +40,7 @@
             <input type="number" class="form-control" name="soLuong" value="${sach.soLuong}">
         </div>
         <button type="submit" class="btn btn-success">Lưu</button>
-        <a href="${pageContext.request.contextPath}/sach?action=list" class="btn btn-secondary">Quay Lại</a>
+        <a href="${pageContext.request.contextPath}/SachController?action=list" class="btn btn-secondary">Quay Lại</a>
     </form>
 </div>
 </body>

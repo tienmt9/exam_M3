@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "SachController", value = "/sach")
+@WebServlet(name = "SachController", value = "/SachController")
 public class SachController extends HttpServlet {
     private SachService sachService;
 
