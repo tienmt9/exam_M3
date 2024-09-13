@@ -15,7 +15,7 @@
 <body>
 <div class="container">
     <h1>Danh Sách Học Sinh</h1>
-    <a href="HocSinhController?action=add" class="btn btn-primary mb-3">Thêm Học Sinh</a>
+    <a href="hocsinh?action=add" class="btn btn-primary mb-3">Thêm Học Sinh</a>
     <table class="table table-bordered">
         <thead>
         <tr>
@@ -32,8 +32,8 @@
                 <td>${hocSinh.hoTen}</td>
                 <td>${hocSinh.lop}</td>
                 <td>
-                    <a href="HocSinhController?action=edit&maHocSinh=${hocSinh.maHocSinh}" class="btn btn-warning">Sửa</a>
-                    <a href="HocSinhController?action=delete&maHocSinh=${hocSinh.maHocSinh}" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa?')">Xóa</a>
+                    <a href="hocsinh?action=edit&maHocSinh=${hocSinh.maHocSinh}" class="btn btn-warning">Sửa</a>
+                    <a href="hocsinh?action=delete&maHocSinh=${hocSinh.maHocSinh}" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa?')">Xóa</a>
                 </td>
             </tr>
         </c:forEach>

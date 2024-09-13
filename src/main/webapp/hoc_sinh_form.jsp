@@ -18,7 +18,7 @@
         <c:when test="${hocSinh != null}">Sửa Học Sinh</c:when>
         <c:otherwise>Thêm Học Sinh</c:otherwise>
     </c:choose></h1>
-    <form action="HocSinhController" method="post">
+    <form action="hocsinh" method="post">
         <div class="form-group">
             <label>Mã Học Sinh</label>
             <input type="text" class="form-control" name="maHocSinh" value="${hocSinh.maHocSinh}" readonly="${hocSinh != null}">
@@ -32,7 +32,7 @@
             <input type="text" class="form-control" name="lop" value="${hocSinh.lop}">
         </div>
         <button type="submit" class="btn btn-success">Lưu</button>
-        <a href="HocSinhController?action=list" class="btn btn-secondary">Quay Lại</a>
+        <a href="hocsinh?action=list" class="btn btn-secondary">Quay Lại</a>
     </form>
 </div>
 </body>

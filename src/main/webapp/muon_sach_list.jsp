@@ -15,7 +15,7 @@
 <body>
 <div class="container">
     <h1>Danh Sách Mượn Sách</h1>
-    <a href="MuonSachController?action=add" class="btn btn-primary mb-3">Mượn Sách</a>
+    <a href="muonsach?action=add" class="btn btn-primary mb-3">Mượn Sách</a>
     <table class="table table-bordered">
         <thead>
         <tr>
@@ -39,7 +39,7 @@
                 <td>${muonSach.trangThai ? "Đã trả" : "Chưa trả"}</td>
                 <td>
                     <c:if test="${!muonSach.trangThai}">
-                        <a href="MuonSachController?action=tra&maMuonSach=${muonSach.maMuonSach}" class="btn btn-success">Trả Sách</a>
+                        <a href="muonsach?action=tra&maMuonSach=${muonSach.maMuonSach}" class="btn btn-success">Trả Sách</a>
                     </c:if>
                 </td>
             </tr>
